@@ -5,6 +5,9 @@ use warp::{http::Response, Filter};
 
 #[tokio::main]
 async fn main() {
+    env_logger::init();
+    log::info!("starting up");
+
     let example1 = warp::get()
         .and(warp::path("api"))
         .and(warp::path("TestRustTrigger"))
