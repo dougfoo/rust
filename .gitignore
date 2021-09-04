@@ -8,3 +8,4 @@ local.settings.json
 # Added by cargo
 
 /target
+**/target/**
